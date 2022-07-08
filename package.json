@@ -1,6 +1,15 @@
 {
+  "name": "js",
+  "version": "1.0.0",
+  "description": "consulta_bd",
+  "main": "index.js",
+  "author": "Edu Martins",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1",
-    "mysql": "^2.18.1"
+  "express": "^4.18.1",
+  "mysql": "^2.18.1",
+  "express-handlebars": "^6.0.6",
+  "mysql2": "^2.3.3",
+  "sequelize": "^6.21.2"
   }
 }
