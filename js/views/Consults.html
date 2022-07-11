@@ -1,0 +1,9 @@
+<h1>LISTAR CADASTROS</h1>
+
+{{#each consults}}
+    ID: {{id}}<br>
+    Nome: {{name}}<br>
+    Sobrenome: {{lastname}}<br>
+    Cadastrado: {{#formatDate createdAt}}{{/formatDate}}<br>
+    <hr>
+{{/each}}
