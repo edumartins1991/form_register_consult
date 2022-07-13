@@ -9,6 +9,7 @@
   flex-direction: column;
   align-self: center;
   padding-left: 50px;
+  background-image: url(./);
 }
 
 .register-container {
