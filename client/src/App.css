@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-image: url(../public/bd.png);
 }
 
 .app-container {
@@ -9,14 +10,14 @@
   flex-direction: column;
   align-self: center;
   padding-left: 50px;
-  background-image: url(./);
 }
 
 .register-container {
   padding: 10px 20px;
   width: max-content;
   height: max-content;
-
+  background-image: unset;
+  background-color: rgb(47, 152, 205);
   margin-top: 20px;
   border: 3px solid black;
   border-radius: 5px;
@@ -26,14 +27,17 @@
   text-align: center;
   margin-bottom: 20px;
   font-family: fantasy;
+  background-image: unset;
 }
 
 .register-input {
   display: block;
+  background-image: unset;
   margin: 10px auto;
   padding: 7px 0;
 }
 
 .register-button {
   padding: 2px 5px;
+  background-image: unset;
 }
