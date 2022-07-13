@@ -6,7 +6,6 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Axios from "axios";
-//import produce from "immer";
 
 export default function FormDialog(props) {
   const [editValues, setEditValues] = useState({
@@ -36,10 +35,10 @@ export default function FormDialog(props) {
         props.listCard.map((value) => {
           return value.id === editValues.id
             ? {
-                id: editValues.id,
-                name: editValues.name,
-                lastname: editValues.lastname,
-              }
+              id: editValues.id,
+              name: editValues.name,
+              lastname: editValues.lastname,
+            }
             : value;
         })
       );
@@ -59,15 +58,16 @@ export default function FormDialog(props) {
   };
 
   return (
-    <div>
-      <Dialog
+    <div className="field">
+      <Dialog className="field"
         open={props.open}
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title">Editar</DialogTitle>
-        <DialogContent>
+        <DialogTitle id="form-dialog-title" className="field">Editar</DialogTitle>
+        <DialogContent className="field">
           <TextField
+
             disabled
             margin="dense"
             id="id"
@@ -77,6 +77,7 @@ export default function FormDialog(props) {
             fullWidth
           />
           <TextField
+            className="field"
             autoFocus
             margin="dense"
             id="name"
